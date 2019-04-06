@@ -12,7 +12,9 @@ $ docker-compose exec app php artisan migrate
 #### Connecting to the mysql db
 // get container name
 $ docker ps
+
 $ docker exec -it insurance-app_database_1 /bin/bash
+
 $ mysql -u homestead -p
 // Import Data
 $ docker-compose exec app php artisan db:seed --class=seedCoordinates
